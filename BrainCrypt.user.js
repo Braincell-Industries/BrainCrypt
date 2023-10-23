@@ -3592,7 +3592,7 @@
       message.embeds = []; //remove embeds in case of edit and in case of the payload is from the embed
   
       if (payloadBuffer.byteLength === 16) {
-        if (!differentKey) message.content = '<:ENC:465534298662109185>⁣';
+        if (!differentKey) message.content = '<:ENC:1131990423359991879>⁣';
         //invisible separator at the end to make the emoji smaller
         else message.content = `<:ENC_${differentKeyDesc}:611264394747183115>⁣`;
       } else {
@@ -3605,9 +3605,9 @@
           message.attachments = [];
           return false;
         }
-        if (!differentKey) message.content = '<:ENC:465534298662109185>' + content;
+        if (!differentKey) message.content = '<:ENC:1131990423359991879>' + content;
         else message.content = `<:ENC_${differentKeyDesc}:611264394747183115>` + content;
-        //message.content = content.replace(/^/gm, "<:ENC:465534298662109185>"); //bad for code blocks
+        //message.content = content.replace(/^/gm, "<:ENC:1131990423359991879>"); //bad for code blocks
         postProcessMessage(message, content);
       }
   
